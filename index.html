@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gamehub</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header id="home">
+    <!-- navbar -->
+    <nav id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./new logo.svg" class="logo" alt="logo" />
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <div class="links-container">
+          <ul class="links">
+            <li>
+              <a href="#home" class="scroll-link">home</a>
+            </li>
+            <li>
+              <a href="#about" class="scroll-link">about</a>
+            </li>
+            <li>
+              <a href="#games" class="scroll-link">games</a>
+            </li>
+            <li>
+              <a href="#contact" class="scroll-link">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- banner -->
+    <div class="banner">
+      <div class="container">
+        <h1>gamehub</h1>
+        <p>
+          A doorway to discover the most trending multiplayer games on the internet
+        </p>
+        <a href="#games" class="scroll-link btn btn-white">explore games</a>
+      </div>
+    </div>
+  </header>
+  <!-- about -->
+  <section id="about" class="section">
+    <div class="title">
+      <h2>about <span>us</span></h2>
+      <p>We are a group of gamers who love to play video games and have been playing them since we were very young. We believe multiplayer games
+        are a great way to make new friends from all over the world. These games are also played on a competitive level, and tournaments are organized
+        surrounding these games. E-sports is a term coined around these competitive games. Our target is to inform enthusiastic gamers, as well as 
+        sponsors, to enter this booming industry and find opportunities to do something that benefits them both mentally and financially. 
+      </p>
+      <iframe src="https://www.youtube.com/embed/e0hlP84HeMU" id="video" frameborder="0"></iframe>
+    </div>
+  </section>
+  <!-- services -->
+  <section id="games" class="section">
+    <div class="title">
+      <h2><span>games</span></h2>
+      <div class="btn-container">
+        <button class="btn-game" title="Valorant"><img src="./valorant.png" alt="Valorant"></button>
+        <button class="btn-game" title="Apex Legends"><img src="./apex-legends.svg" alt="Apex"></button>
+        <button class="btn-game" title="CS:GO"><img src="./CSGO.svg" alt="CS:GO"></button>
+        <button class="btn-game" title="Fortnite"><img src="./fortnite.svg" alt="Fortnite"></button>
+      </div>
+    </div>
+  </section>
+  <!-- contact -->
+  <section id="contact" class="section">
+    <div class="title">
+      <h2>contact <span>us</span></h2>
+      <p>Ask us anything! We will get back to you as soon as possible</p>
+      <div class="form-container">
+        <form method="POST">
+          <label for="fname">First Name</label><br>
+          <input type="text" id="fname" name="firstname" required><br>
+
+          <label for="lname">Last Name</label><br>
+          <input type="text" id="lname" name="lastname" required><br>
+
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" required><br>
+
+          <label for="subject">Subject</label><br>
+          <textarea name="subject" id="subject"></textarea><br>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="footer">
+    <p>
+      copyright &copy; Gamehub <span id="date"></span>. all rights reserved
+    </p>
+  </footer>
+  <a class="scroll-link top-link" href="#home">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+  <!-- javascript -->
+  <script src="app.js"></script>
+</body>
+
+</html>
